@@ -1,0 +1,20 @@
+<h1>Users</h1>
+  <% @users.each do |user| %>
+<div class="notification">
+    <div class="notification-content">
+      <ul>
+        <li><strong>Name: </strong><%= user.name %></li>
+        <li><strong>Age: </strong><%= user.age %></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<div class="mb-12", data-controller="toggle">
+
+  <button class="btn btn-outline-primary", class="mt-8" data-action="click->toggle#fire">Add a new user</button>
+
+  <div class="mt-4 d-none" data-toggle-target="toggleableElement">
+  <%= render "form", user: @user, classe: "d-none" %>
+  </div>
+</div>

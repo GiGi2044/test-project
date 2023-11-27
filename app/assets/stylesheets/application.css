@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+.container {
+  display: inline ;
+  text-align: center;
+
+}
+.notification {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8px;
+  background: white;
+  padding: 8px 16px;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.notification .notification-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.notification li {
+  list-style: none;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.notification ul {
+  padding: 0px;
+}
